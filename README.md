@@ -26,7 +26,7 @@ exports.sendSignupToGoogleChat = functions.auth.user().onCreate((user) => {
 
 ### Additional Setup
 
-Before installing this extension, make sure to retrieve the [Google Chat Webhook URL](https://developers.google.com/chat/how-tos/webhooks#step_1_register_the_incoming_webhook) of your space. The webhook URL is currently accessible only to Google Workspace accouns.
+Before installing this extension, make sure to retrieve the [Google Chat Webhook URL](https://developers.google.com/chat/how-tos/webhooks#step_1_register_the_incoming_webhook) of your space. The webhook URL is currently accessible only to Google Workspace accounts.
 
 ```js
 const GOOGLE_CHAT_WEBHOOK_URL = "https://chat.googleapis.com/v1/spaces/....";
