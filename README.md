@@ -1,4 +1,4 @@
-# Get notified of your new users using Firebase Authentication and Google Chat
+# Be notified of new signups in your app using Firebase Authentication and Google Chat
 
 **Author**: Mailmeteor (**[https://mailmeteor.com/](https://mailmeteor.com/)**)
 
@@ -26,7 +26,7 @@ exports.sendSignupToGoogleChat = functions.auth.user().onCreate((user) => {
 
 ### Additional Setup
 
-Before installing this extension, make sure to retrieve the [Google Chat Webhook URL](https://developers.google.com/chat/how-tos/webhooks#step_1_register_the_incoming_webhook) of your space. The webhook URL is accessible only for Google Workspace users.
+Before installing this extension, make sure to retrieve the [Google Chat Webhook URL](https://developers.google.com/chat/how-tos/webhooks#step_1_register_the_incoming_webhook) of your space. The webhook URL is currently accessible only to Google Workspace accouns.
 
 ```js
 const GOOGLE_CHAT_WEBHOOK_URL = "https://chat.googleapis.com/v1/spaces/....";
